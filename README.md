@@ -208,7 +208,7 @@ npx tsc --noEmit
 1. **Simulated Benchmark:** NASA C-MAPSS FD001 is a simulated turbofan degradation benchmark and does not replace physical industrial turbine telemetry.
 2. **Binary Framing:** The model classifies 30-cycle failure risk and does not output continuous Remaining Useful Life (RUL) regression estimates.
 3. **Attribution vs Causality:** Feature importance indicates predictive model contribution within the fitted model and does not establish physical root cause.
-
+ 
 ---
 
 ## License & References
