@@ -1,0 +1,30 @@
+{
+  "Logistic Regression (Baseline)": {
+    "TN": 3419,
+    "FP": 51,
+    "FN": 76,
+    "TP": 524,
+    "false_alarm_rate": 0.014697406340057636
+  },
+  "Decision Tree": {
+    "TN": 3378,
+    "FP": 92,
+    "FN": 98,
+    "TP": 502,
+    "false_alarm_rate": 0.026512968299711816
+  },
+  "Random Forest": {
+    "TN": 3416,
+    "FP": 54,
+    "FN": 56,
+    "TP": 544,
+    "false_alarm_rate": 0.015561959654178675
+  },
+  "HistGradientBoosting": {
+    "TN": 3419,
+    "FP": 51,
+    "FN": 42,
+    "TP": 558,
+    "false_alarm_rate": 0.014697406340057636
+  }
+}

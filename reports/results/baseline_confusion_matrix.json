@@ -1,0 +1,10 @@
+{
+  "true_negatives": 3419,
+  "false_positives": 51,
+  "false_negatives": 76,
+  "true_positives": 524,
+  "total_positive_predictions": 575,
+  "total_negative_predictions": 3495,
+  "actual_positive_count": 600,
+  "actual_negative_count": 3470
+}

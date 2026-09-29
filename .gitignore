@@ -1,0 +1,29 @@
+# Dependency directories
+node_modules/
+.venv/
+venv/
+env/
+
+# Build and distribution directories
+dist/
+build/
+coverage/
+
+# Python cache & compiled files
+__pycache__/
+*.py[cod]
+*$py.class
+.pytest_cache/
+
+# Environment files
+.env
+.env.*
+!.env.example
+
+# Logs and temporary files
+*.log
+*.tmp
+
+# Operating system artifacts
+.DS_Store
+Thumbs.db

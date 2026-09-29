@@ -1,0 +1,20 @@
+{
+  "experiment_id": "EXP-001-baseline-logistic",
+  "timestamp": "2026-09-27T23:25:50.262097",
+  "model_type": "LogisticRegression",
+  "parameters": {
+    "random_state": 42,
+    "max_iter": 1000,
+    "C": 1.0,
+    "class_weight": null
+  },
+  "feature_count": 385,
+  "training_samples": 16561,
+  "validation_samples": 4070,
+  "probability_distribution": {
+    "min": 3.5300434369650465e-12,
+    "max": 0.9999966087217997,
+    "mean": 0.1441613117611572,
+    "std": 0.3089138818980597
+  }
+}

@@ -1,0 +1,4 @@
+{
+  "selected_threshold": 0.35,
+  "rule": "max_f1"
+}

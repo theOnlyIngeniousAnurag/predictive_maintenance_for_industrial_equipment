@@ -1,0 +1,12 @@
+{
+  "best_params": {
+    "min_samples_leaf": 10,
+    "max_leaf_nodes": 31,
+    "max_iter": 100,
+    "learning_rate": 0.1,
+    "l2_regularization": 1.0
+  },
+  "best_cv_score": 0.9663501491561455,
+  "search_duration_sec": 86.14900159835815,
+  "n_candidates_evaluated": 6
+}

@@ -1,0 +1,51 @@
+{
+  "experiment_id": "EXP-006-gradient-boosting-tuned",
+  "timestamp": "2026-09-27T17:46:11.665010",
+  "untuned_validation_metrics": {
+    "precision": 0.916256157635468,
+    "recall": 0.93,
+    "f1_score": 0.9230769230769231,
+    "roc_auc": 0.9962363112391931,
+    "pr_auc": 0.979139588370831,
+    "accuracy": 0.9771498771498771,
+    "specificity": 0.9853025936599423,
+    "false_alarm_rate": 0.014697406340057636,
+    "true_negatives": 3419,
+    "false_positives": 51,
+    "false_negatives": 42,
+    "true_positives": 558,
+    "total_alerts": 609
+  },
+  "tuned_validation_metrics": {
+    "precision": 0.9265442404006677,
+    "recall": 0.925,
+    "f1_score": 0.9257714762301918,
+    "roc_auc": 0.9962233429394812,
+    "pr_auc": 0.9790993834758985,
+    "accuracy": 0.9781326781326781,
+    "specificity": 0.9873198847262248,
+    "false_alarm_rate": 0.012680115273775217,
+    "true_negatives": 3426,
+    "false_positives": 44,
+    "false_negatives": 45,
+    "true_positives": 555,
+    "total_alerts": 599
+  },
+  "deltas_tuned_minus_untuned": {
+    "delta_recall": -0.0050000000000000044,
+    "delta_precision": 0.010288082765199769,
+    "delta_pr_auc": -4.020489493250512e-05,
+    "delta_f1": 0.0026945531532687195,
+    "delta_roc_auc": -1.2968299711868525e-05,
+    "delta_fp": -7,
+    "delta_fn": 3
+  },
+  "overfitting_gap": {
+    "train_pr_auc": 0.9998219170330915,
+    "val_pr_auc": 0.9790993834758985,
+    "gap_pr_auc": 0.020722533557193,
+    "train_f1": 0.9960408418420504,
+    "val_f1": 0.9257714762301918,
+    "gap_f1": 0.07026936561185859
+  }
+}

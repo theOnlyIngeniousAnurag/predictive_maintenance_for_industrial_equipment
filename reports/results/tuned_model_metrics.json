@@ -1,0 +1,15 @@
+{
+  "precision": 0.9265442404006677,
+  "recall": 0.925,
+  "f1_score": 0.9257714762301918,
+  "roc_auc": 0.9962233429394812,
+  "pr_auc": 0.9790993834758985,
+  "accuracy": 0.9781326781326781,
+  "specificity": 0.9873198847262248,
+  "false_alarm_rate": 0.012680115273775217,
+  "true_negatives": 3426,
+  "false_positives": 44,
+  "false_negatives": 45,
+  "true_positives": 555,
+  "total_alerts": 599
+}

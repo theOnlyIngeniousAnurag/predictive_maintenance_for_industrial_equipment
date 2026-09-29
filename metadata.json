@@ -1,0 +1,6 @@
+{
+  "name": "Predictive Maintenance for Industrial Equipment",
+  "description": "An end-to-end machine learning system and monitoring dashboard for industrial equipment failure risk prediction.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
