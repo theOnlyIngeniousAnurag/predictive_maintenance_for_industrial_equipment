@@ -167,11 +167,15 @@ A React / Vite / Tailwind CSS monitoring dashboard provides:
 
 ## Testing & Quality Assurance
 
-The project includes an automated test suite covering data loading, target boundaries, feature extraction, leakage prevention, model serialization, and dashboard metric provenance.
+The project includes an automated test suite covering data loading, target boundaries,
+feature extraction, leakage prevention, model serialization, and dashboard metric provenance.
 
-To run the test suite:
+Run the complete repository test suite with:
+
 ```bash
-PYTHONPATH=. pytest -v
+python -m pytest -v   #for Windows(PowerShell)
+
+PYTHONPATH=. pytest -v      #for macOS
 ```
 *(Result: 31 passed, 0 failed)*
 
@@ -179,36 +183,59 @@ PYTHONPATH=. pytest -v
 
 ## Reproducibility & Setup
 
+The repository is structured so that the final model, processed artifacts, automated
+tests, and monitoring interface can be inspected without requiring the evaluator to
+retrain the complete modelling pipeline.
+
+### Prerequisites
+
+- Python 3.11 or newer
+- Node.js and npm
+- Git
+
+Verify the installed versions:
+
+```bash
+python --version
+node --version
+npm --version
+```
+
 ### 1. Clone & Environment Setup
 ```bash
 git clone https://github.com/theOnlyIngeniousAnurag/predictive_maintenance_for_industrial_equipment.git
 cd predictive_maintenance_for_industrial_equipment
 
 python -m venv .venv
-source .venv/bin/activate  # On Windows: .venv\Scripts\activate
+
+source .venv/bin/activate            #On macOS only
+.venv\Scripts\Activate.ps1           #On Windows only
+
 pip install -r requirements.txt
 ```
 
 ### 2. Run Test Suite
 ```bash
-PYTHONPATH=. pytest -v
+PYTHONPATH=. pytest -v               #for macOS
+python -m pytest -v                  #for Windows 
 ```
+*(Result: 31 passed, 0 failed)*
 
 ### 3. Frontend Development & Build
 ```bash
 npm install
+npm run lint
 npm run build
 npx tsc --noEmit
 ```
 
----
+### 4. Run the Monitoring Application
+```bash
+npm run dev
+```
+*(The application is available at:
+http://localhost:3000/)*
 
-## Limitations
-
-1. **Simulated Benchmark:** NASA C-MAPSS FD001 is a simulated turbofan degradation benchmark and does not replace physical industrial turbine telemetry.
-2. **Binary Framing:** The model classifies 30-cycle failure risk and does not output continuous Remaining Useful Life (RUL) regression estimates.
-3. **Attribution vs Causality:** Feature importance indicates predictive model contribution within the fitted model and does not establish physical root cause.
- 
 ---
 
 ## License & References
