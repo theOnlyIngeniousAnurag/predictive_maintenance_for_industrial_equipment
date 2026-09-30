@@ -226,7 +226,6 @@ python -m pytest -v                  #for Windows
 npm install
 npm run lint
 npm run build
-npx tsc --noEmit
 ```
 
 ### 4. Run the Monitoring Application
